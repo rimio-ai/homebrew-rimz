@@ -10,6 +10,7 @@ class Rimz < Formula
     end
     on_intel do
       url "https://github.com/rimio-ai/rimz/releases/download/v0.2/rimz-x86_64-apple-darwin.tar.gz"
+      version "0.2"
       sha256 "f0e4c3959ae207c064d050c211767dfe80a719bb5580dc2e2def3277f2b283ec"
     end
   end

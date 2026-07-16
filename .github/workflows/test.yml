@@ -1,0 +1,29 @@
+name: Test formula
+
+on:
+  pull_request:
+    paths: ["Formula/**"]
+  push:
+    branches: [main]
+    paths: ["Formula/**"]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        runner: [macos-15, macos-15-intel]
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: Tap this checkout
+        run: brew tap --custom-remote rimio-ai/rimz "$GITHUB_WORKSPACE"
+      - name: Audit and install RimZ
+        run: |
+          brew audit --strict rimio-ai/rimz/rimz
+          brew install rimio-ai/rimz/rimz
+          brew test rimio-ai/rimz/rimz

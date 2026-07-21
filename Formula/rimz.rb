@@ -1,17 +1,17 @@
 class Rimz < Formula
   desc "Routes your attention across a fleet of coding agents"
   homepage "https://github.com/rimio-ai/rimz"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/rimio-ai/rimz/releases/download/v0.4/rimz-aarch64-apple-darwin.tar.gz"
-      sha256 "aa8a610a0a5a223a7812ec0c294eaab3b44c39d44431d5c8caf506281a244a1b"
+      url "https://github.com/rimio-ai/rimz/releases/download/v0.4.1/rimz-aarch64-apple-darwin.tar.gz"
+      sha256 "e5258e88d925fff496e83f222dfc07e9e86470e1bcfafd0a4e68812e49d26238"
     end
     on_intel do
-      url "https://github.com/rimio-ai/rimz/releases/download/v0.4/rimz-x86_64-apple-darwin.tar.gz"
-      version "0.4"
-      sha256 "7342fd7a432652961126715edd534d0555d3a5166938ee3ca80852d2a9ac7476"
+      url "https://github.com/rimio-ai/rimz/releases/download/v0.4.1/rimz-x86_64-apple-darwin.tar.gz"
+      sha256 "7f892be73f9b8e6b2a6a616c6bf8b6eb86cc313592beca24d55ea601568279e6"
     end
   end
 

@@ -10,6 +10,7 @@ class Rimz < Formula
     end
     on_intel do
       url "https://github.com/rimio-ai/rimz/releases/download/v0.4.1/rimz-x86_64-apple-darwin.tar.gz"
+      version "0.4.1"
       sha256 "7f892be73f9b8e6b2a6a616c6bf8b6eb86cc313592beca24d55ea601568279e6"
     end
   end
@@ -19,6 +20,6 @@ class Rimz < Formula
   end
 
   test do
-    system bin/"rimz", "--version"
+    assert_match version.to_s, shell_output("#{bin}/rimz --version")
   end
 end

@@ -1,7 +1,6 @@
 class Rimz < Formula
   desc "Routes your attention across a fleet of coding agents"
   homepage "https://github.com/rimio-ai/rimz"
-  version "0.4.1"
   license "MIT"
 
   on_macos do

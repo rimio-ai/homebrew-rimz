@@ -5,13 +5,13 @@ class Rimz < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/rimio-ai/rimz/releases/download/v0.3/rimz-aarch64-apple-darwin.tar.gz"
-      sha256 "c99b654eeab3a634e00bdd942efe6fc09a19ba509490940febb0908dc5a6e332"
+      url "https://github.com/rimio-ai/rimz/releases/download/v0.4/rimz-aarch64-apple-darwin.tar.gz"
+      sha256 "aa8a610a0a5a223a7812ec0c294eaab3b44c39d44431d5c8caf506281a244a1b"
     end
     on_intel do
-      url "https://github.com/rimio-ai/rimz/releases/download/v0.3/rimz-x86_64-apple-darwin.tar.gz"
-      version "0.3"
-      sha256 "901409e0a9ca8a51703aa57134fee8d087b727efc774496740c1b3ce14128114"
+      url "https://github.com/rimio-ai/rimz/releases/download/v0.4/rimz-x86_64-apple-darwin.tar.gz"
+      version "0.4"
+      sha256 "7342fd7a432652961126715edd534d0555d3a5166938ee3ca80852d2a9ac7476"
     end
   end
 
